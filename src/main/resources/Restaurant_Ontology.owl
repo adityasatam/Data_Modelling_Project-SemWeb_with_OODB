@@ -1,0 +1,404 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4"
+     xml:base="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#hasMenus -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#hasMenus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu"/>
+        <rdfs:label>hasMenus</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#isLocatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location"/>
+        <rdfs:label>isLocatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#isServedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#isServedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#serves"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <rdfs:label>isServedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#isSpecializedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#isSpecializedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Cuisine"/>
+        <rdfs:label>isSpecializedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#lists -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#lists">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <rdfs:label>lists</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#serves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#serves">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <rdfs:label>serves</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#address">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#city">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>city</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#cusineName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#cusineName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Cuisine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>cusineName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#endDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>endDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#ingredients -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#ingredients">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>ingredients</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label>price</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#startDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>startDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Cuisine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Cuisine">
+        <rdfs:label>Cuisine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food">
+        <rdfs:label>Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location">
+        <rdfs:label>Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu">
+        <rdfs:label>Menu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant">
+        <rdfs:label>Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#DMenu1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#DMenu1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu"/>
+        <untitled-ontology-4:lists rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Dosa"/>
+        <untitled-ontology-4:endDate>11-09-2021</untitled-ontology-4:endDate>
+        <untitled-ontology-4:startDate>11-09-2020</untitled-ontology-4:startDate>
+        <rdfs:label>DMenu1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Dosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Dosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <untitled-ontology-4:isServedIn rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant2"/>
+        <untitled-ontology-4:description>It is Indian dish</untitled-ontology-4:description>
+        <untitled-ontology-4:ingredients>Rice, Wheat</untitled-ontology-4:ingredients>
+        <untitled-ontology-4:price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</untitled-ontology-4:price>
+        <rdfs:label>Dosa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Indian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Indian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Cuisine"/>
+        <untitled-ontology-4:cusineName>Indian</untitled-ontology-4:cusineName>
+        <rdfs:label>Indian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Italian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Italian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Cuisine"/>
+        <untitled-ontology-4:cusineName>Italian</untitled-ontology-4:cusineName>
+        <rdfs:label>Italian</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location"/>
+        <untitled-ontology-4:address>CP</untitled-ontology-4:address>
+        <untitled-ontology-4:city>Delhi</untitled-ontology-4:city>
+        <rdfs:label>Location1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#PMenu1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#PMenu1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu"/>
+        <untitled-ontology-4:lists rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Pizza"/>
+        <untitled-ontology-4:endDate>20-12-2021</untitled-ontology-4:endDate>
+        <untitled-ontology-4:startDate>20-11-2020</untitled-ontology-4:startDate>
+        <rdfs:label>PMenu1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Pizza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Pizza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <untitled-ontology-4:isServedIn rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant1"/>
+        <untitled-ontology-4:description>It is Italian dish</untitled-ontology-4:description>
+        <untitled-ontology-4:ingredients>Bread, Cheese</untitled-ontology-4:ingredients>
+        <untitled-ontology-4:price rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</untitled-ontology-4:price>
+        <rdfs:label>Pizza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <untitled-ontology-4:hasMenus rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#PMenu1"/>
+        <untitled-ontology-4:isLocatedIn rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location1"/>
+        <untitled-ontology-4:isSpecializedIn rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Italian"/>
+        <untitled-ontology-4:name>Pizza Hut</untitled-ontology-4:name>
+        <rdfs:label>Restaurant1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        <untitled-ontology-4:hasMenus rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#DMenu1"/>
+        <untitled-ontology-4:isSpecializedIn rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Indian"/>
+        <untitled-ontology-4:name>Dosa Plaza</untitled-ontology-4:name>
+        <rdfs:label>Restaurant2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#pani_poori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#pani_poori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+        <untitled-ontology-4:isServedIn rdf:resource="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Cuisine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Food"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Location"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Menu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mohitjain/ontologies/2021/2/untitled-ontology-4#Restaurant"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
